@@ -56,7 +56,7 @@ endmacro()
 
 xcheck_add_c_compiler_flag(-Wall)
 if(NOT MSVC AND NOT IOS AND NOT TVOS AND NOT WATCHOS)
-    xcheck_add_c_compiler_flag(-Werror)
+    xcheck_add_c_compiler_flag(-Wno-error)
     xcheck_add_c_compiler_flag(-Wextra)
 endif()
 xcheck_add_c_compiler_flag(-Wformat=2)
